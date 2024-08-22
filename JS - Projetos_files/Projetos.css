@@ -1,0 +1,265 @@
+body{
+    font-family: 'Kanit';
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0px 30px 0px 0px;
+    background-color: black;
+    width: 100%;
+}
+
+.cabecalho .logo{
+    width: 65px;
+    display: block;
+}
+
+.cabecalho .menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav li a {
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.cabecalho nav ul {
+    list-style-type: none;
+}
+
+.cabecalho nav li a:hover {
+    background-color: #363637;
+}
+
+.hamburguer{
+    filter: invert();
+    display: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    height: 92vh;
+}
+
+.container .titulo-projetos {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    top: 40px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.super {
+    flex-direction: row;
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    bottom: 10%;
+}
+
+.yofukashi-no-uta {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.yofukashi-no-uta :hover {
+    opacity: 50%;
+}
+
+.imagem-yofukashinouta {
+    transition: all 0.5s ease-in-out
+}
+
+.imagem-yofukashinouta:hover {
+    transform: scale(1.1);
+}
+
+.codegeass {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.codegeass :hover {
+    opacity: 50%;
+}
+
+.imagem-codegeass {
+    transition: all 0.5s ease-in-out;
+}
+
+.imagem-codegeass:hover {
+    transform: scale(1.1);
+}
+
+.steinsgate {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.steinsgate:hover {
+    opacity: 50%;
+}
+
+.imagem-steinsgate {
+    transition: all 0.5s ease-in-out;
+}
+
+.imagem-steinsgate:hover {
+    transform: scale(1.1);
+}
+
+.datealive {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.datealive:hover {
+    opacity: 50%;
+}
+
+.imagem-datealive {
+    transition: all 0.5s ease-in-out;
+}
+
+.imagem-datealive:hover {
+    transform: scale(1.1);
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 30px 0px 0px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.rodape .texto-rodape {
+    color: white;
+    opacity: 25%;
+    font-size: 12px;
+}
+
+@media (max-width: 720px) {
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0px 30px 0px 0px;
+        background-color: black;
+        width: 100%;
+    }
+    
+    .cabecalho .logo{
+        width: 65px;
+    }
+    
+    .cabecalho nav li a {
+        font-weight: bold;
+        color: white;
+        font-size: 25px;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    
+    .cabecalho nav ul {
+        list-style-type: none;
+    }
+
+    .hamburguer{
+        display: block;
+        padding-top: 14px;
+        margin: 0;
+        z-index: 999;
+        position: relative;
+    }
+
+    .cabecalho .menu{
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        margin: 0;
+        background-color:rgb(22, 22, 22);
+        flex-direction: column;
+        padding: 100px 20px;
+        transition: 0.5s ease;
+        z-index: 999;
+    }
+
+    .menu.active{
+        right: 0;
+    }
+
+    
+    .container {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .conjunto3{
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .super {
+        flex-direction: row;
+        position: relative;
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .rodape {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 30px 0px 0px;
+        background-color: black;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .rodape .texto-rodape {
+        color: white;
+        opacity: 25%;
+        font-size: 12px;
+    }
+}
