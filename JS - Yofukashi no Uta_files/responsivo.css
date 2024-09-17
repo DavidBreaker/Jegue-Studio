@@ -1,0 +1,9 @@
+body {
+    background-image: linear-gradient(to bottom, #23145b, #160d18);
+}
+
+.container {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 30px;
+}
